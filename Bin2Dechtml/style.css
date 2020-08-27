@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    background-color: aqua;
+    /* flex-direction: column; */
+    padding: 10px;
+}
+
+.convert{
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+img{
+    width: 90px;
+    height: 90px;
+}
+
+label{
+    font-size: 30px;
+    font-family: Roboto, sans serif;
+}
+
+.content #binary_number{
+    /* background-color: #f00; */
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.content #decimal_number{
+    /* background-color: #0f0; */
+    padding-top: 20px;
+    border: black 1px solid;
+}
+
+.content .binaryNumberInput,
+.content .decimalNumberInput{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+input#binary_Number,
+input#decimal_Number{
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    height: 26px;
+    color: #000;
+    background-color: #fff;
+}
+
+div#binaryNumber,
+div#decimalNumber{
+    text-align: center;
+}

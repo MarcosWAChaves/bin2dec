@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Binary 2 Decimal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="convert.js"></script>
+
+</head>
+<body>
+    <div class="content">
+        <div id="binary_number">
+            <div id="binaryNumber">
+                <label for="binaryNumber">Binary Number</label>
+            </div>
+            <div class="binaryNumberInput">
+                <input type="text" name="binaryNumber" id="binary_Number" 
+                maxlength="8" placeholder="Enter 0 or 1" value=""/>
+            </div>
+        </div>
+
+        <div class="convert">
+            <button class="button" style="vertical-align:middle" 
+            onclick="convertButton()">
+                <span>Convert </span>
+            </button>
+        </div>
+
+        <div id="decimal_number">
+            <div id="decimalNumber">
+                <label for="decimalNumber">Decimal Number</label>
+            </div>
+            <div class="decimalNumberInput">
+                <input type="text" name="decimalNumber" id="decimal_Number" disabled value="">
+            </div>  
+        </div>
+    </div>
+
+</body>
+</html>
