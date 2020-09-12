@@ -1,4 +1,5 @@
 function convertButton() {
+
     var str = document.getElementById("binary_Number");
     var resp = document.getElementById("decimal_Number");
         
@@ -40,7 +41,6 @@ function convertButton() {
     if(p0 == "" && p1 == "" && p2 == "" && p3 == "" && p4 == "" && p5 == "" && p6 == ""){
         var result = p7 * 1;
     };
-
 
     return resp.value = result;
 }
