@@ -12,11 +12,8 @@ body{
 }
 
 .content{ 
-    display: flex;
     background-color: #091758;
-    flex-direction: column;
     padding: 50px 35px;
-    width: 503.44px;
     margin-top: 6%;
     margin-bottom: 6%;
     border-radius: 16px;
@@ -120,4 +117,32 @@ div.buttons .num{
     font-size: 500%;
     padding-top: 25px;
     box-shadow: 0px 1.8vh #05217A;
+}
+
+@media (max-width:699px){
+    input#binary_Number,
+    input#decimal_Number,
+    .delButton,
+    .button{
+        height: 92px;
+        font-size: 300%;
+        width: 350px;
+    }
+
+    .delButton,
+    .button{
+        padding-top: 15px;
+    }
+}
+
+@media (max-width:399px){
+    input#binary_Number,
+    input#decimal_Number,
+    .delButton,
+    .button{
+        height: 70px;
+        font-size: 200%;
+        width: 240px;
+    }
+
 }
